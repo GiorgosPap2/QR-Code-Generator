@@ -1,6 +1,5 @@
 import qrcode
 
-# Base URL for the index.html file
 base_url = "https://giorgospap2.github.io/QR-Code-Generator/"
 
 

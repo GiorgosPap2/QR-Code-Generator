@@ -20,56 +20,54 @@
             border-radius: 10px;
         }
 
-        /* Default style for "Team not found" */
         .default {
             background-color: #f0f0f0;
             color: #333;
         }
 
-        /* Styles for each word */
         .Αστέρι {
-            background-color: #000033; /* Dark blue night sky */
-            color: #ffff99; /* Star-like yellow */
+            background-color: #000033; 
+            color: #ffff99; 
             text-shadow: 0 0 5px #fff;
         }
         .Κήπος {
-            background-color: #e6ffe6; /* Light green */
-            color: #006600; /* Dark green */
+            background-color: #e6ffe6; 
+            color: #006600; 
             border: 2px solid #009900;
         }
         .Μήλο {
-            background-color: #ffcccc; /* Light red */
-            color: #cc0000; /* Apple red */
+            background-color: #ffcccc; 
+            color: #cc0000; 
         }
         .Σχολείο {
-            background-color: #f5f5dc; /* Beige like old paper */
-            color: #4b2e2e; /* Brown like wood desks */
+            background-color: #f5f5dc; 
+            color: #4b2e2e; 
         }
         .Φως {
-            background-color: #fff3e6; /* Warm light */
-            color: #ff9900; /* Orange glow */
+            background-color: #fff3e6; 
+            color: #ff9900; 
             text-shadow: 0 0 10px #ffcc00;
         }
         .Φύση {
-            background-color: #ccffcc; /* Vibrant green */
-            color: #006633; /* Life-like green */
+            background-color: #ccffcc;
+            color: #006633; 
         }
         .Βουνό {
-            background-color: #d9b38c; /* Earthy brown */
-            color: #3d2b1f; /* Dark brown */
+            background-color: #d9b38c;
+            color: #3d2b1f; 
             border: 2px solid #8c5523;
         }
         .Θάλασσα {
-            background-color: #cce5ff; /* Sea blue */
-            color: #003366; /* Deep blue */
+            background-color: #cce5ff; 
+            color: #003366; 
         }
         .Παγωτό {
-            background-color: #ffe6f0; /* Light pink */
-            color: #ff6699; /* Ice cream pink */
+            background-color: #ffe6f0; 
+            color: #ff6699; 
         }
         .Φωτιά {
-            background-color: #ffcccc; /* Lava red */
-            color: #660000; /* Dark red */
+            background-color: #ffcccc; 
+            color: #660000; 
             text-shadow: 0 0 5px #ff3300;
         }
     </style>
@@ -78,11 +76,9 @@
     <div id="teamContent"></div>
 
     <script>
-        // Get the team parameter from the URL
         const urlParams = new URLSearchParams(window.location.search);
         const team = urlParams.get('team');
 
-        // Team information
         const teamData = {
             'team1': 'Αστέρι',
             'team2': 'Κήπος',
@@ -96,7 +92,6 @@
             'team10': 'Φωτιά'
         };
 
-        // Display the team information and apply styling
         const contentElement = document.getElementById('teamContent');
         if (team && teamData[team]) {
             const word = teamData[team];

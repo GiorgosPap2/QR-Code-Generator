@@ -11,10 +11,11 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            transition: all 0.5s ease; /* Smooth transition for style changes */
+            transition: all 0.5s ease; 
         }
         #teamContent {
-            font-size: 2em;
+            font-size: 5em;
+            font-weight: bold;
             padding: 20px;
             border-radius: 10px;
         }
@@ -100,10 +101,10 @@
         if (team && teamData[team]) {
             const word = teamData[team];
             contentElement.textContent = word;
-            document.body.className = word; // Apply the class based on the word
+            document.body.className = word;
         } else {
             contentElement.textContent = 'Team not found';
-            document.body.className = 'default'; // Default style
+            document.body.className = 'default'; 
         }
     </script>
 </body>
